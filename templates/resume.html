@@ -1,0 +1,861 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deepak MK | VP Data Science & AI Leader Resume</title>
+    <meta name="description" content="Resume of Deepak MK, Senior Data Science Leader & AI Systems Expert.">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+    <!-- Lucide Icons CDN -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+        /* CSS Variables & Theme Setup */
+        :root[data-theme="dark"] {
+            --bg-primary: #090A0F;
+            --bg-secondary: #0D0E16;
+            --bg-card: rgba(20, 22, 32, 0.55);
+            --border-color: rgba(255, 255, 255, 0.06);
+            --border-hover: rgba(139, 92, 246, 0.4);
+            --text-primary: #F3F4F6;
+            --text-secondary: #9CA3AF;
+            --text-muted: #6B7280;
+            --primary: #8B5CF6; /* Cyber Violet */
+            --primary-gradient: linear-gradient(135deg, #8B5CF6, #06B6D4);
+            --secondary: #06B6D4; /* Neon Cyan */
+            --tag-bg: rgba(139, 92, 246, 0.1);
+            --tag-text: #a78bfa;
+            --shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+        }
+
+        :root[data-theme="light"] {
+            --bg-primary: #F8FAFC;
+            --bg-secondary: #F1F5F9;
+            --bg-card: rgba(255, 255, 255, 0.85);
+            --border-color: rgba(0, 0, 0, 0.08);
+            --border-hover: rgba(109, 40, 217, 0.4);
+            --text-primary: #1E293B;
+            --text-secondary: #475569;
+            --text-muted: #64748B;
+            --primary: #6D28D9;
+            --primary-gradient: linear-gradient(135deg, #6D28D9, #0891B2);
+            --secondary: #0891B2;
+            --tag-bg: rgba(109, 40, 217, 0.08);
+            --tag-text: #6d28d9;
+            --shadow: 0 4px 20px rgba(31, 38, 135, 0.05);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: var(--bg-primary);
+            color: var(--text-primary);
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            line-height: 1.5;
+            transition: background-color 0.3s ease, color 0.3s ease;
+            padding-bottom: 40px;
+        }
+
+        header, main, footer {
+            width: 100%;
+            max-width: 950px;
+            margin: 0 auto;
+        }
+
+        /* Top controls for interactive resume */
+        .controls-panel {
+            max-width: 950px;
+            margin: 20px auto 0 auto;
+            padding: 0 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .btn-action {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            padding: 10px 20px;
+            border-radius: 30px;
+            font-size: 0.9rem;
+            font-weight: 600;
+            cursor: pointer;
+            border: 1px solid var(--border-color);
+            background: var(--bg-card);
+            color: var(--text-primary);
+            transition: all 0.25s ease;
+            text-decoration: none;
+        }
+
+        .btn-action:hover {
+            border-color: var(--primary);
+            transform: translateY(-2px);
+            box-shadow: 0 0 10px rgba(139, 92, 246, 0.15);
+        }
+
+        .btn-primary {
+            background: var(--primary-gradient);
+            color: #ffffff;
+            border: none;
+        }
+
+        .btn-primary:hover {
+            box-shadow: 0 4px 15px rgba(139, 92, 246, 0.3);
+        }
+
+        /* Main Resume Container */
+        .resume-paper {
+            margin: 20px auto;
+            padding: 50px;
+            background: var(--bg-card);
+            border: 1px solid var(--border-color);
+            border-radius: 12px;
+            box-shadow: var(--shadow);
+            backdrop-filter: blur(10px);
+            position: relative;
+            overflow: hidden;
+        }
+
+        /* Resume Header */
+        .resume-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            border-bottom: 2px solid var(--border-color);
+            padding-bottom: 25px;
+            margin-bottom: 25px;
+        }
+
+        .header-left h1 {
+            font-family: 'Outfit', sans-serif;
+            font-size: 2.8rem;
+            font-weight: 800;
+            line-height: 1.1;
+            letter-spacing: -0.03em;
+            margin-bottom: 4px;
+            background: var(--primary-gradient);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .header-left .title-sub {
+            font-size: 1.25rem;
+            font-weight: 600;
+            color: var(--secondary);
+            margin-bottom: 12px;
+            letter-spacing: -0.01em;
+        }
+
+        .header-left .meta-location {
+            font-size: 0.95rem;
+            color: var(--text-secondary);
+            font-weight: 500;
+            display: flex;
+            align-items: center;
+            gap: 6px;
+        }
+
+        .header-right {
+            text-align: right;
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+            font-size: 0.95rem;
+            color: var(--text-secondary);
+        }
+
+        .contact-item {
+            display: inline-flex;
+            align-items: center;
+            justify-content: flex-end;
+            gap: 8px;
+            color: var(--text-primary);
+            text-decoration: none;
+            transition: color 0.2s ease;
+        }
+
+        .contact-item:hover {
+            color: var(--primary);
+        }
+
+        .contact-item i {
+            color: var(--secondary);
+            width: 16px;
+            height: 16px;
+        }
+
+        /* Grid Layout */
+        .resume-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 25px;
+        }
+
+        .resume-section {
+            margin-bottom: 20px;
+        }
+
+        .section-title {
+            font-family: 'Outfit', sans-serif;
+            font-size: 1.3rem;
+            font-weight: 700;
+            color: var(--primary);
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            margin-bottom: 12px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            border-bottom: 1px solid var(--border-color);
+            padding-bottom: 6px;
+        }
+
+        .section-title i {
+            color: var(--secondary);
+            width: 20px;
+            height: 20px;
+        }
+
+        /* Summary */
+        .summary-text {
+            color: var(--text-secondary);
+            font-size: 0.98rem;
+            line-height: 1.6;
+        }
+
+        /* Competencies Grid */
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 12px;
+        }
+
+        .skill-category {
+            background: rgba(255, 255, 255, 0.02);
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+            padding: 12px 16px;
+        }
+
+        .skill-category h4 {
+            font-size: 0.95rem;
+            font-weight: 700;
+            color: var(--text-primary);
+            margin-bottom: 8px;
+        }
+
+        .skill-chips {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 6px;
+        }
+
+        .chip {
+            background: var(--tag-bg);
+            color: var(--tag-text);
+            padding: 3px 8px;
+            border-radius: 4px;
+            font-size: 0.8rem;
+            font-weight: 600;
+        }
+
+        /* Projects & Experience List */
+        .experience-item {
+            margin-bottom: 20px;
+            position: relative;
+        }
+
+        .experience-item:last-child {
+            margin-bottom: 0;
+        }
+
+        .item-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: 6px;
+        }
+
+        .item-title-row h3 {
+            font-size: 1.15rem;
+            font-weight: 700;
+            color: var(--text-primary);
+        }
+
+        .item-company {
+            font-size: 0.95rem;
+            font-weight: 600;
+            color: var(--secondary);
+        }
+
+        .item-date {
+            font-size: 0.85rem;
+            font-weight: 700;
+            color: var(--primary);
+            background: var(--tag-bg);
+            padding: 3px 10px;
+            border-radius: 20px;
+            white-space: nowrap;
+        }
+
+        .item-bullets {
+            list-style: none;
+            padding-left: 0;
+            font-size: 0.95rem;
+            color: var(--text-secondary);
+            display: flex;
+            flex-direction: column;
+            gap: 6px;
+            margin-top: 6px;
+        }
+
+        .item-bullets li {
+            position: relative;
+            padding-left: 15px;
+        }
+
+        .item-bullets li::before {
+            content: "•";
+            position: absolute;
+            left: 0;
+            color: var(--secondary);
+            font-weight: bold;
+        }
+
+        .project-meta {
+            font-size: 0.85rem;
+            font-weight: 600;
+            color: var(--text-muted);
+            margin-top: 4px;
+            font-family: 'JetBrains Mono', monospace;
+        }
+
+        /* Education & Certs Columns */
+        .dual-columns {
+            display: grid;
+            grid-template-columns: 1.1fr 0.9fr;
+            gap: 30px;
+        }
+
+        .cert-list {
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+        }
+
+        .cert-card {
+            background: rgba(255, 255, 255, 0.02);
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+            padding: 10px 14px;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .cert-card i {
+            color: var(--primary);
+            flex-shrink: 0;
+            width: 20px;
+            height: 20px;
+        }
+
+        .cert-info h4 {
+            font-size: 0.9rem;
+            font-weight: 700;
+            color: var(--text-primary);
+        }
+
+        .cert-info p {
+            font-size: 0.8rem;
+            color: var(--text-secondary);
+        }
+
+        /* Footer styling */
+        .resume-footer {
+            text-align: center;
+            margin-top: 30px;
+            font-size: 0.8rem;
+            color: var(--text-muted);
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .resume-header {
+                flex-direction: column;
+                gap: 15px;
+            }
+            .header-right {
+                text-align: left;
+                align-items: flex-start;
+            }
+            .resume-paper {
+                padding: 25px;
+            }
+            .skills-grid {
+                grid-template-columns: 1fr;
+            }
+            .item-header {
+                flex-direction: column;
+                gap: 6px;
+            }
+            .item-date {
+                align-self: flex-start;
+            }
+            .dual-columns {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        /* Print Media Styles - Optimization for PDF saving */
+        @media print {
+            body {
+                background: #ffffff !important;
+                color: #000000 !important;
+                padding: 0 !important;
+            }
+            .controls-panel, .resume-footer {
+                display: none !important;
+            }
+            .resume-paper {
+                border: none !important;
+                box-shadow: none !important;
+                background: transparent !important;
+                padding: 0 !important;
+                margin: 0 !important;
+                backdrop-filter: none !important;
+            }
+            :root {
+                --text-primary: #111827 !important;
+                --text-secondary: #374151 !important;
+                --text-muted: #6B7280 !important;
+                --primary: #4F46E5 !important;
+                --secondary: #0D9488 !important;
+                --tag-bg: #F3F4F6 !important;
+                --tag-text: #374151 !important;
+                --border-color: #E5E7EB !important;
+            }
+            .header-left h1 {
+                background: none !important;
+                -webkit-text-fill-color: initial !important;
+                color: #111827 !important;
+            }
+            .experience-item, .resume-section {
+                page-break-inside: avoid !important;
+            }
+            .chip {
+                border: 1px solid #D1D5DB !important;
+            }
+            .cert-card {
+                background: transparent !important;
+                border: 1px solid #E5E7EB !important;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Interactive Panel -->
+    <div class="controls-panel">
+        <a href="../index.html" class="btn-action">
+            <i data-lucide="arrow-left"></i> Back to Portfolio
+        </a>
+        <div style="display: flex; gap: 10px;">
+            <button id="theme-toggle" class="btn-action">
+                <i data-lucide="moon"></i> Toggle Theme
+            </button>
+            <button class="btn-action btn-primary" onclick="window.print()">
+                <i data-lucide="printer"></i> Print / Save PDF
+            </button>
+        </div>
+    </div>
+
+    <!-- Main Sheet -->
+    <main class="resume-paper">
+        <!-- Header -->
+        <header class="resume-header">
+            <div class="header-left">
+                <h1>DEEPAK MK</h1>
+                <div class="title-sub">VP Data Science | AI/ML Leader | LLM & RAG Systems Expert</div>
+                <div class="meta-location">
+                    <i data-lucide="map-pin"></i> Bengaluru, India &bull; Global Experience (Malaysia, UAE, USA)
+                </div>
+            </div>
+            <div class="header-right">
+                <a href="tel:+919538404430" class="contact-item">
+                    +91 95384 04430 <i data-lucide="phone"></i>
+                </a>
+                <a href="mailto:deepak09b@gmail.com" class="contact-item">
+                    deepak09b@gmail.com <i data-lucide="mail"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/deepak-mk-56618b45/" target="_blank" class="contact-item">
+                    linkedin.com/in/deepak-mk-56618b45 <i data-lucide="linkedin"></i>
+                </a>
+                <a href="https://medium.com/@deepak09b" target="_blank" class="contact-item">
+                    medium.com/@deepak09b <i data-lucide="book-open"></i>
+                </a>
+                <a href="https://github.com/Deepak-mk" target="_blank" class="contact-item">
+                    github.com/Deepak-mk <i data-lucide="github"></i>
+                </a>
+            </div>
+        </header>
+
+        <div class="resume-grid">
+            <!-- Summary -->
+            <section class="resume-section">
+                <h2 class="section-title"><i data-lucide="user"></i> Professional Summary</h2>
+                <p class="summary-text">
+                    Senior data science leader with 12+ years of experience driving AI/ML initiatives across consulting, development, and organizational management. Currently leading cross-functional teams in data engineering, AI/ML, and MLOps at ExamRoom.AI. Expert in production-grade LLM implementations, advanced RAG architectures, and highly scalable cloud-native AI infrastructures serving millions of users.
+                </p>
+            </section>
+
+            <!-- Skills -->
+            <section class="resume-section">
+                <h2 class="section-title"><i data-lucide="sliders"></i> Core Competencies</h2>
+                <div class="skills-grid">
+                    <div class="skill-category">
+                        <h4>Leadership & Strategy</h4>
+                        <div class="skill-chips">
+                            <span class="chip">VP Leadership</span>
+                            <span class="chip">Team Scaling</span>
+                            <span class="chip">Agile / Scrum</span>
+                            <span class="chip">ITIL Governance</span>
+                            <span class="chip">Cost Optimization</span>
+                        </div>
+                    </div>
+                    <div class="skill-category">
+                        <h4>AI & LLM Technologies</h4>
+                        <div class="skill-chips">
+                            <span class="chip">LLMs</span>
+                            <span class="chip">RAG Systems</span>
+                            <span class="chip">Agentic AI</span>
+                            <span class="chip">Fine-Tuning</span>
+                            <span class="chip">Prompt Engineering</span>
+                        </div>
+                    </div>
+                    <div class="skill-category">
+                        <h4>Machine Learning & Analytics</h4>
+                        <div class="skill-chips">
+                            <span class="chip">Python / R</span>
+                            <span class="chip">PySpark</span>
+                            <span class="chip">Predictive Modeling</span>
+                            <span class="chip">Time Series</span>
+                            <span class="chip">Clustering</span>
+                        </div>
+                    </div>
+                    <div class="skill-category">
+                        <h4>Data & Cloud Infra</h4>
+                        <div class="skill-chips">
+                            <span class="chip">AWS Cloud</span>
+                            <span class="chip">Docker / K8s</span>
+                            <span class="chip">Vector DBs (Qdrant)</span>
+                            <span class="chip">MLOps CI/CD</span>
+                            <span class="chip">Tableau / Power BI</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- GitHub Projects Section -->
+            <section class="resume-section">
+                <h2 class="section-title"><i data-lucide="github"></i> Completed GitHub Enterprise Projects</h2>
+                
+                <div class="experience-item">
+                    <div class="item-header">
+                        <div class="item-title-row">
+                            <h3>Autonomous Enterprise Runtime</h3>
+                            <div class="item-company">Principal Architect & Author</div>
+                            <div class="project-meta">Repo: github.com/Deepak-mk/autonomous-enterprise-runtime</div>
+                        </div>
+                        <span class="item-date">Completed</span>
+                    </div>
+                    <ul class="item-bullets">
+                        <li>Designed operating-system-grade runtime infrastructure patterns for autonomous enterprise agent networks.</li>
+                        <li>Implemented a multi-layered Cognitive Memory System featuring working memory caches, episodic experience logs, semantic fact indices, and Blackboards with mutex locks.</li>
+                        <li>Developed a priority-queue Task Scheduler containing inline policy checks and self-healing recovery handlers (retries, backoffs, LLM fallbacks, and human escalations).</li>
+                        <li>Integrated a cost-aware Economic Routing Engine matching incoming task complexity with cost-optimized LLM fallbacks, enforcing reasoning budget limits.</li>
+                    </ul>
+                </div>
+
+                <div class="experience-item">
+                    <div class="item-header">
+                        <div class="item-title-row">
+                            <h3>Agentic System Failure Playbook</h3>
+                            <div class="item-company">Principal Architect & Author</div>
+                            <div class="project-meta">Repo: github.com/Deepak-mk/agentic-system-failure-playbook</div>
+                        </div>
+                        <span class="item-date">Completed</span>
+                    </div>
+                    <ul class="item-bullets">
+                        <li>Authored a code-first engineering playbook for containing, detecting, and recovering from autonomous AI agent failures.</li>
+                        <li>Created a validation framework classifying failure modes across reasoning drift, tool utilization loops, and context pollution.</li>
+                        <li>Implemented action journaling structures enabling transaction rollbacks and compensating operations for autonomous writes.</li>
+                        <li>Built high-fidelity reasoning trace logging to serialize agent thought steps for forensic auditability.</li>
+                    </ul>
+                </div>
+
+                <div class="experience-item">
+                    <div class="item-header">
+                        <div class="item-title-row">
+                            <h3>Agentic Analytics Platform (SPOT)</h3>
+                            <div class="item-company">Lead Developer</div>
+                            <div class="project-meta">Repo: github.com/Deepak-mk/spot</div>
+                        </div>
+                        <span class="item-date">Completed</span>
+                    </div>
+                    <ul class="item-bullets">
+                        <li>Developed a production-grade enterprise decision engine separating the reasoning Data Plane from the policy Control Plane.</li>
+                        <li>Implemented a governed Six-Layer Runtime including Perception, Memory, Planning, Action, Control, and Governance.</li>
+                        <li>Created a self-healing ReAct planning loop that captures execution exceptions and triggers self-correction strategies.</li>
+                    </ul>
+                </div>
+
+                <div class="experience-item">
+                    <div class="item-header">
+                        <div class="item-title-row">
+                            <h3>Production RAG Pipeline</h3>
+                            <div class="item-company">Developer</div>
+                            <div class="project-meta">Repo: github.com/Deepak-mk/RAG</div>
+                        </div>
+                        <span class="item-date">Completed</span>
+                    </div>
+                    <ul class="item-bullets">
+                        <li>Built an asynchronous RAG pipeline combining document ingestion, Qdrant vector indexing, and Groq inference.</li>
+                        <li>Integrated Inngest workflow orchestration to manage proxy polling, retry mechanisms, and rate-limiting queues.</li>
+                        <li>Established an LLM-as-a-Judge validation step checking answer faithfulness and context support to detect hallucinations.</li>
+                    </ul>
+                </div>
+            </section>
+
+            <!-- Publications & Articles -->
+            <section class="resume-section">
+                <h2 class="section-title"><i data-lucide="book-open"></i> Publications & Articles</h2>
+                
+                <div class="experience-item">
+                    <div class="item-header">
+                        <div class="item-title-row">
+                            <h3>The AI Runtime Layer</h3>
+                            <div class="item-company">Medium</div>
+                        </div>
+                        <span class="item-date">Article</span>
+                    </div>
+                    <p class="summary-text" style="margin-top: 4px; font-style: italic;">
+                        Detailed architectural exploration of operating-system-grade runtime layers for autonomous enterprise AI agent networks, scheduling, and concurrency.
+                    </p>
+                    <a href="https://medium.com/@deepak09b/the-ai-runtime-layer-2cb349a980c9" target="_blank" style="font-size: 0.85rem; color: var(--secondary); font-weight: 600; display: inline-flex; align-items: center; gap: 4px; margin-top: 6px;">
+                        Read Article <i data-lucide="external-link" style="width: 14px; height: 14px;"></i>
+                    </a>
+                </div>
+
+                <div class="experience-item">
+                    <div class="item-header">
+                        <div class="item-title-row">
+                            <h3>Failure Modes of Agentic Systems</h3>
+                            <div class="item-company">Medium & LinkedIn</div>
+                        </div>
+                        <span class="item-date">Article & Post</span>
+                    </div>
+                    <p class="summary-text" style="margin-top: 4px; font-style: italic;">
+                        Analysis of reasoning loops, tool-use exceptions, and error containment patterns in production agent deployments.
+                    </p>
+                    <a href="https://medium.com/@deepak09b/failure-modes-of-agentic-systems-03dd6af69467" target="_blank" style="font-size: 0.85rem; color: var(--secondary); font-weight: 600; display: inline-flex; align-items: center; gap: 4px; margin-top: 6px;">
+                        Read Article <i data-lucide="external-link" style="width: 14px; height: 14px;"></i>
+                    </a>
+                </div>
+
+                <div class="experience-item">
+                    <div class="item-header">
+                        <div class="item-title-row">
+                            <h3>Designing Reversible Autonomy</h3>
+                            <div class="item-company">Medium</div>
+                        </div>
+                        <span class="item-date">Article</span>
+                    </div>
+                    <p class="summary-text" style="margin-top: 4px; font-style: italic;">
+                        Practical engineering patterns for transaction journaling, compensating operations, and rolling back database writes executed by autonomous agents.
+                    </p>
+                    <a href="https://medium.com/@deepak09b/designing-reversible-autonomy-702a458fe898" target="_blank" style="font-size: 0.85rem; color: var(--secondary); font-weight: 600; display: inline-flex; align-items: center; gap: 4px; margin-top: 6px;">
+                        Read Article <i data-lucide="external-link" style="width: 14px; height: 14px;"></i>
+                    </a>
+                </div>
+
+                <div class="experience-item">
+                    <div class="item-header">
+                        <div class="item-title-row">
+                            <h3>Designing Enterprise Decision Systems in the Age of Agentic AI</h3>
+                            <div class="item-company">Medium</div>
+                        </div>
+                        <span class="item-date">Article</span>
+                    </div>
+                    <p class="summary-text" style="margin-top: 4px; font-style: italic;">
+                        Architectural patterns dividing the agentic analytics platform into a reasoning Data Plane and a strict compliance/governance Control Plane.
+                    </p>
+                    <a href="https://medium.com/@deepak09b/designing-enterprise-decision-systems-in-the-age-of-agentic-ai-11a2340232db" target="_blank" style="font-size: 0.85rem; color: var(--secondary); font-weight: 600; display: inline-flex; align-items: center; gap: 4px; margin-top: 6px;">
+                        Read Article <i data-lucide="external-link" style="width: 14px; height: 14px;"></i>
+                    </a>
+                </div>
+            </section>
+
+            <!-- Experience -->
+            <section class="resume-section">
+                <h2 class="section-title"><i data-lucide="briefcase"></i> Professional Experience</h2>
+
+                <div class="experience-item">
+                    <div class="item-header">
+                        <div class="item-title-row">
+                            <h3>VP Data Science</h3>
+                            <div class="item-company">ExamRoom.AI, Bengaluru</div>
+                        </div>
+                        <span class="item-date">July 2021 - Present</span>
+                    </div>
+                    <ul class="item-bullets">
+                        <li>Build and manage cross-functional AI, Data Engineering, and MLOps teams scaling up to 20+ engineers.</li>
+                        <li>Architect production LLM systems for educational assessment and automatic content generation serving millions.</li>
+                        <li>Implement Retrieval-Augmented Generation (RAG) frameworks containing advanced semantic search and safety checks.</li>
+                        <li>Establish robust MLOps infrastructure including pipeline automation, model registries, and automated CI/CD.</li>
+                        <li>Optimized cloud and model inference costs by 40% using specialized routing, scheduling, and model distillation.</li>
+                    </ul>
+                </div>
+
+                <div class="experience-item">
+                    <div class="item-header">
+                        <div class="item-title-row">
+                            <h3>Data Scientist</h3>
+                            <div class="item-company">Innodatatics, Kuala Lumpur, Malaysia</div>
+                        </div>
+                        <span class="item-date">July 2019 - June 2021</span>
+                    </div>
+                    <ul class="item-bullets">
+                        <li>Developed a smart customer support chatbot leveraging RASA NLU and CNN models (NER, POS, parser pipelines).</li>
+                        <li>Built UAE hospital ICU capacity planner using ARIMA forecasting, handling data across 26+ disparate layouts.</li>
+                        <li>Deployed customer segmentation models (K-means, Clara, DBSCAN) for target marketing in Malaysian banks.</li>
+                        <li>Designed IoT predictive maintenance classifiers for wind turbine sensor streams, achieving 67%+ lead-time accuracy.</li>
+                    </ul>
+                </div>
+
+                <div class="experience-item">
+                    <div class="item-header">
+                        <div class="item-title-row">
+                            <h3>Data Scientist</h3>
+                            <div class="item-company">DXC Technologies, Bengaluru</div>
+                        </div>
+                        <span class="item-date">August 2015 - June 2019</span>
+                    </div>
+                    <ul class="item-bullets">
+                        <li>Constructed ITSM ticket classification and routing engines with Naïve Bayes, achieving 83% classification accuracy.</li>
+                        <li>Directed data-mining initiatives (Apriori, Random Forest) targeting and achieving key infrastructure incident reductions.</li>
+                        <li>Developed diagnostic SLA breach prediction models on backup/storage server workloads achieving 90% accuracy.</li>
+                    </ul>
+                </div>
+
+                <div class="experience-item">
+                    <div class="item-header">
+                        <div class="item-title-row">
+                            <h3>Business Analyst</h3>
+                            <div class="item-company">MacrosSys Technologies, Bengaluru</div>
+                        </div>
+                        <span class="item-date">October 2012 - July 2015</span>
+                    </div>
+                    <ul class="item-bullets">
+                        <li>Led ITSM governance product implementations and ITIL compliance integrations.</li>
+                        <li>Coordinated release deployments, structured User Acceptance Testing (UAT) schedules, and performed root-cause analysis.</li>
+                    </ul>
+                </div>
+            </section>
+
+            <!-- Education & Certifications -->
+            <div class="dual-columns">
+                <section class="resume-section">
+                    <h2 class="section-title"><i data-lucide="graduation-cap"></i> Education</h2>
+                    <div class="experience-item">
+                        <div class="item-header">
+                            <div class="item-title-row">
+                                <h3>Bachelor of Engineering (Computer Science)</h3>
+                                <div class="item-company">Government Engineering College, VTU</div>
+                            </div>
+                            <span class="item-date" style="background: transparent; color: var(--text-secondary); padding: 0;">2011</span>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="resume-section">
+                    <h2 class="section-title"><i data-lucide="award"></i> Certifications</h2>
+                    <div class="cert-list">
+                        <div class="cert-card">
+                            <i data-lucide="shield-check"></i>
+                            <div class="cert-info">
+                                <h4>AWS Cloud Foundation</h4>
+                                <p>Amazon Web Services</p>
+                            </div>
+                        </div>
+                        <div class="cert-card">
+                            <i data-lucide="users"></i>
+                            <div class="cert-info">
+                                <h4>Scrum Master Foundation</h4>
+                                <p>Scrum Alliance / Scrum Study</p>
+                            </div>
+                        </div>
+                        <div class="cert-card">
+                            <i data-lucide="heart-pulse"></i>
+                            <div class="cert-info">
+                                <h4>CITI Program Certificate</h4>
+                                <p>MIT (Healthcare Projects)</p>
+                            </div>
+                        </div>
+                        <div class="cert-card">
+                            <i data-lucide="zap"></i>
+                            <div class="cert-info">
+                                <h4>Lean Six Sigma Black & Green Belt</h4>
+                                <p>Process & Quality Optimization</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+
+        <footer class="resume-footer">
+            <p>&copy; 2026 Deepak MK. Prepared for digital sharing and standardized print formatting.</p>
+        </footer>
+    </main>
+
+    <script>
+        // Initialize Lucide Icons
+        lucide.createIcons();
+
+        // Dark/Light Theme toggler
+        const themeToggleBtn = document.getElementById('theme-toggle');
+        const htmlEl = document.documentElement;
+        
+        // Initial setup from local storage or parent document setting
+        const currentTheme = localStorage.getItem('theme') || 'dark';
+        htmlEl.setAttribute('data-theme', currentTheme);
+        updateToggleIcon(currentTheme);
+
+        themeToggleBtn.addEventListener('click', () => {
+            const activeTheme = htmlEl.getAttribute('data-theme');
+            const newTheme = activeTheme === 'dark' ? 'light' : 'dark';
+            htmlEl.setAttribute('data-theme', newTheme);
+            localStorage.setItem('theme', newTheme);
+            updateToggleIcon(newTheme);
+        });
+
+        function updateToggleIcon(theme) {
+            const icon = themeToggleBtn.querySelector('i');
+            if (theme === 'light') {
+                icon.setAttribute('data-lucide', 'sun');
+            } else {
+                icon.setAttribute('data-lucide', 'moon');
+            }
+            lucide.createIcons();
+        }
+    </script>
+</body>
+</html>

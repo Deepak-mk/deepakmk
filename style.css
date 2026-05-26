@@ -1291,6 +1291,98 @@ section {
 }
 
 /* ==========================================
+   PUBLICATIONS SECTION
+   ========================================== */
+.publications {
+    padding: 6rem 0;
+}
+
+.publications-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+}
+
+.publication-card {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    border-radius: 12px;
+}
+
+.publication-card:hover {
+    transform: translateY(-5px);
+    border-color: var(--border-card-hover);
+    box-shadow: 0 10px 30px rgba(139, 92, 246, 0.1);
+}
+
+.pub-badge {
+    position: absolute;
+    top: 1.25rem;
+    right: 1.25rem;
+    background: rgba(139, 92, 246, 0.1);
+    border: 1px solid var(--primary);
+    color: var(--primary);
+    padding: 0.25rem 0.75rem;
+    border-radius: 30px;
+    font-size: 0.75rem;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    gap: 0.25rem;
+}
+
+.pub-content {
+    padding: 2.25rem;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: space-between;
+}
+
+.pub-title {
+    font-size: 1.25rem;
+    margin-bottom: 0.75rem;
+    margin-top: 0.75rem;
+    padding-right: 7.5rem;
+    color: var(--text-primary);
+    font-family: 'Outfit', sans-serif;
+    font-weight: 700;
+}
+
+.pub-text {
+    color: var(--text-secondary);
+    font-size: 0.95rem;
+    margin-bottom: 1.5rem;
+    line-height: 1.6;
+}
+
+.pub-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: var(--secondary);
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 0.9rem;
+    transition: color 0.2s ease;
+    align-self: flex-start;
+}
+
+.pub-link:hover {
+    color: var(--primary);
+}
+
+.pub-links-row {
+    display: flex;
+    gap: 1.5rem;
+    align-self: flex-start;
+}
+
+/* ==========================================
    RESPONSIVE MEDIA QUERIES (MOBILE)
    ========================================== */
 @media (max-width: 1024px) {
@@ -1358,7 +1450,8 @@ section {
         margin-top: 0.5rem;
     }
 
-    .projects-grid {
+    .projects-grid,
+    .publications-grid {
         grid-template-columns: 1fr;
     }
 

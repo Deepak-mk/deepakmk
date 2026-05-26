@@ -31,6 +31,7 @@
                 <a href="#skills" class="nav-link">Skills</a>
                 <a href="#experience" class="nav-link">Experience</a>
                 <a href="#projects" class="nav-link">Projects</a>
+                <a href="#publications" class="nav-link">Publications</a>
                 <a href="#education" class="nav-link">Education</a>
                 <a href="#contact" class="nav-link">Contact</a>
             </nav>
@@ -40,10 +41,10 @@
                     <i data-lucide="moon" class="icon-moon"></i>
                     <i data-lucide="sun" class="icon-sun"></i>
                 </button>
-                <button class="btn btn-primary btn-print" onclick="window.print()">
-                    <i data-lucide="printer"></i>
-                    <span>Print Resume</span>
-                </button>
+                <a href="templates/resume.html" target="_blank" class="btn btn-primary">
+                    <i data-lucide="file-text"></i>
+                    <span>View Resume</span>
+                </a>
                 <button class="menu-toggle" id="menu-toggle" aria-label="Toggle Menu">
                     <i data-lucide="menu" class="icon-open"></i>
                     <i data-lucide="x" class="icon-close"></i>
@@ -382,6 +383,99 @@
             </div>
 
             <div class="projects-grid">
+                <!-- GitHub Project 1: Autonomous Enterprise Runtime -->
+                <div class="project-card glass-card" data-category="ai-nlp" data-skills="llm,rag,aws,vector-db,mlops,docker,python">
+                    <div class="project-badge">AI Infra & Agentic Systems</div>
+                    <div class="project-content">
+                        <h3 class="project-title">Autonomous Enterprise Runtime</h3>
+                        <p class="project-text">
+                            An operating-system-grade runtime infrastructure pattern for autonomous enterprise AI agent networks. Specially designed to bridge the gap between simple workflow orchestration and reliable production deployments.
+                        </p>
+                        <ul class="project-details">
+                            <li><strong>Task Scheduler:</strong> Built scheduling priority queues with policy boundary validations (cost, permissions) and self-healing recovery handlers (exponential backoffs, HITL).</li>
+                            <li><strong>Cognitive Memory:</strong> Implemented working cache, episodic experience logs, and shared blackboards with concurrency mutex locks.</li>
+                            <li><strong>Economic Routing:</strong> Formulated complexity classifiers and dynamic LLM fallbacks to maximize cost-efficiency under budget caps.</li>
+                        </ul>
+                        <div class="project-tech">
+                            <span class="tech-chip">LLMs</span>
+                            <span class="tech-chip">RAG Systems</span>
+                            <span class="tech-chip">MLOps</span>
+                            <span class="tech-chip">AWS</span>
+                            <span class="tech-chip">Docker</span>
+                            <span class="tech-chip">Python</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- GitHub Project 2: Agentic System Failure Playbook -->
+                <div class="project-card glass-card" data-category="ai-nlp" data-skills="llm,python,mlops">
+                    <div class="project-badge">AI Safety & Governance</div>
+                    <div class="project-content">
+                        <h3 class="project-title">Agentic System Failure Playbook</h3>
+                        <p class="project-text">
+                            A comprehensive guide and code-first repository outlining practical failure modes of autonomous AI agents in production, with defensive containment, detection, and recovery patterns.
+                        </p>
+                        <ul class="project-details">
+                            <li><strong>Failure Taxonomy:</strong> Created schemas to classify and intercept reasoning drift, infinite tool loops, and context pollution.</li>
+                            <li><strong>Reversible Autonomy:</strong> Developed action journaling structures enabling transaction rollbacks and compensating operations.</li>
+                            <li><strong>Decision Traceability:</strong> Built serialization traces to audit agent thought steps forensically.</li>
+                        </ul>
+                        <div class="project-tech">
+                            <span class="tech-chip">LLMs</span>
+                            <span class="tech-chip">Safety Guardrails</span>
+                            <span class="tech-chip">Telemetry</span>
+                            <span class="tech-chip">Python</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- GitHub Project 3: Agentic Analytics Platform (SPOT) -->
+                <div class="project-card glass-card" data-category="analytics" data-skills="llm,sql,aws,vector-db,python">
+                    <div class="project-badge">Agentic BI / Analytics</div>
+                    <div class="project-content">
+                        <h3 class="project-title">Agentic Analytics Platform (SPOT)</h3>
+                        <p class="project-text">
+                            A production-grade enterprise decision system bridging the autonomy-trust gap. Strictly separates the reasoning Data Plane from the policy Control Plane.
+                        </p>
+                        <ul class="project-details">
+                            <li><strong>Six-Layer Runtime:</strong> Built structured layers for Perception, Memory, Planning, Action, Control, and Governance.</li>
+                            <li><strong>Control Plane:</strong> Enforces universal query interceptors and compliance geofences.</li>
+                            <li><strong>Self-Healing:</strong> Implemented ReAct loops to catch query exceptions and auto-correct.</li>
+                        </ul>
+                        <div class="project-tech">
+                            <span class="tech-chip">LLMs</span>
+                            <span class="tech-chip">SQL</span>
+                            <span class="tech-chip">Qdrant</span>
+                            <span class="tech-chip">AWS Ready</span>
+                            <span class="tech-chip">Python</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- GitHub Project 4: Production RAG Pipeline -->
+                <div class="project-card glass-card" data-category="ai-nlp" data-skills="llm,rag,vector-db,mlops,docker,python">
+                    <div class="project-badge">Retrieval & Orchestration</div>
+                    <div class="project-content">
+                        <h3 class="project-title">Production RAG Pipeline</h3>
+                        <p class="project-text">
+                            An enterprise-grade, asynchronous document ingestion and Q&A workflow featuring workflow orchestration and hallucination evaluation.
+                        </p>
+                        <ul class="project-details">
+                            <li><strong>Asynchronous Workflows:</strong> Orchestrated ingestion and proxy polling with Inngest.</li>
+                            <li><strong>Vector Search:</strong> Combined Qdrant Vector DB, LlamaIndex, and local embeddings.</li>
+                            <li><strong>LLM-as-a-Judge:</strong> Integrated faithfulness metrics (using Groq Llama 3.3) to detect hallucinations.</li>
+                        </ul>
+                        <div class="project-tech">
+                            <span class="tech-chip">FastAPI</span>
+                            <span class="tech-chip">Inngest</span>
+                            <span class="tech-chip">Qdrant</span>
+                            <span class="tech-chip">Groq</span>
+                            <span class="tech-chip">LlamaIndex</span>
+                            <span class="tech-chip">Streamlit</span>
+                        </div>
+                    </div>
+                </div>
+
                 <!-- Project 1: Chatbot -->
                 <div class="project-card glass-card" data-category="ai-nlp" data-skills="nlp,deep-learning,python,spark">
                     <div class="project-badge">Generative AI / NLP</div>
@@ -516,6 +610,90 @@
             </div>
         </section>
 
+        <!-- Publications Section -->
+        <section class="publications" id="publications">
+            <div class="section-header">
+                <h2 class="section-title">Publications & Articles</h2>
+                <div class="section-underline"></div>
+            </div>
+
+            <div class="publications-grid">
+                <!-- Article 1 -->
+                <div class="publication-card glass-card">
+                    <div class="pub-badge"><i data-lucide="book-open"></i> Medium Article</div>
+                    <div class="pub-content">
+                        <div>
+                            <h3 class="pub-title">The AI Runtime Layer</h3>
+                            <p class="pub-text">
+                                A deep architectural dive into operating-system-grade runtime patterns for orchestrating autonomous AI agent networks, managing priority queues, and concurrency blackboards.
+                            </p>
+                        </div>
+                        <a href="https://medium.com/@deepak09b/the-ai-runtime-layer-2cb349a980c9" target="_blank" rel="noopener" class="pub-link">
+                            <span>Read on Medium</span>
+                            <i data-lucide="external-link"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Article 2 -->
+                <div class="publication-card glass-card">
+                    <div class="pub-badge"><i data-lucide="linkedin"></i> LinkedIn & Medium</div>
+                    <div class="pub-content">
+                        <div>
+                            <h3 class="pub-title">Failure Modes of Agentic Systems</h3>
+                            <p class="pub-text">
+                                An in-depth analysis of cognitive reasoning drifts, tool execution loops, context contamination, and defensive containment patterns in production systems.
+                            </p>
+                        </div>
+                        <div class="pub-links-row">
+                            <a href="https://medium.com/@deepak09b/failure-modes-of-agentic-systems-03dd6af69467" target="_blank" rel="noopener" class="pub-link" style="display: inline-flex; align-items: center; gap: 0.25rem;">
+                                <span>Medium</span>
+                                <i data-lucide="external-link" style="width: 14px; height: 14px;"></i>
+                            </a>
+                            <a href="https://www.linkedin.com/in/deepak-mk-56618b45/" target="_blank" rel="noopener" class="pub-link" style="display: inline-flex; align-items: center; gap: 0.25rem;">
+                                <span>LinkedIn</span>
+                                <i data-lucide="external-link" style="width: 14px; height: 14px;"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Article 3 -->
+                <div class="publication-card glass-card">
+                    <div class="pub-badge"><i data-lucide="book-open"></i> Medium Article</div>
+                    <div class="pub-content">
+                        <div>
+                            <h3 class="pub-title">Designing Reversible Autonomy</h3>
+                            <p class="pub-text">
+                                Explores engineering patterns for transaction logging, action journaling, and state verification to safely rollback autonomous actions by AI agents.
+                            </p>
+                        </div>
+                        <a href="https://medium.com/@deepak09b/designing-reversible-autonomy-702a458fe898" target="_blank" rel="noopener" class="pub-link">
+                            <span>Read on Medium</span>
+                            <i data-lucide="external-link"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Article 4 -->
+                <div class="publication-card glass-card">
+                    <div class="pub-badge"><i data-lucide="book-open"></i> Medium Article</div>
+                    <div class="pub-content">
+                        <div>
+                            <h3 class="pub-title">Designing Enterprise Decision Systems</h3>
+                            <p class="pub-text">
+                                Architecting governed analytics agents by strictly isolating the reasoning Data Plane from the policy Control Plane to close the autonomy-trust gap.
+                            </p>
+                        </div>
+                        <a href="https://medium.com/@deepak09b/designing-enterprise-decision-systems-in-the-age-of-agentic-ai-11a2340232db" target="_blank" rel="noopener" class="pub-link">
+                            <span>Read on Medium</span>
+                            <i data-lucide="external-link"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
         <!-- Certifications & Education -->
         <section class="education-certifications" id="education">
             <div class="dual-column-grid">
@@ -602,18 +780,18 @@
                                 <span class="link-value">+91 95384 04430</span>
                             </div>
                         </a>
-                        <a href="tel:+60199379024" class="contact-link-item">
-                            <div class="link-icon"><i data-lucide="phone"></i></div>
-                            <div>
-                                <span class="link-label">Phone (Malaysia)</span>
-                                <span class="link-value">+60 19-937 9024</span>
-                            </div>
-                        </a>
-                        <a href="https://linkedin.com" target="_blank" rel="noopener" class="contact-link-item">
+                        <a href="https://www.linkedin.com/in/deepak-mk-56618b45/" target="_blank" rel="noopener" class="contact-link-item">
                             <div class="link-icon"><i data-lucide="linkedin"></i></div>
                             <div>
                                 <span class="link-label">LinkedIn</span>
-                                <span class="link-value">Deepak MK on LinkedIn</span>
+                                <span class="link-value">linkedin.com/in/deepak-mk-56618b45</span>
+                            </div>
+                        </a>
+                        <a href="https://medium.com/@deepak09b" target="_blank" rel="noopener" class="contact-link-item">
+                            <div class="link-icon"><i data-lucide="book-open"></i></div>
+                            <div>
+                                <span class="link-label">Medium</span>
+                                <span class="link-value">medium.com/@deepak09b</span>
                             </div>
                         </a>
                     </div>
@@ -660,6 +838,7 @@
                 <a href="#about">About</a>
                 <a href="#experience">Experience</a>
                 <a href="#projects">Projects</a>
+                <a href="#publications">Publications</a>
                 <a href="mailto:deepak09b@gmail.com">Contact</a>
             </div>
         </div>
