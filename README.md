@@ -12,9 +12,12 @@ Personal portfolio of **Deepak MK**, VP Data Science & AI Engineering with 15+ y
 
 | Section | Highlights |
 |---------|-----------|
-| 🏭 AI Factory | Flagship enterprise AI platform — 35+ agents, governed GenAI, CV fraud detection |
-| 🤖 Agentic Systems | Autonomous Enterprise Runtime, Failure Playbook |
-| 📊 Analytics | SPOT agentic analytics platform, Production RAG pipeline |
+| 🏭 AI Factory | Flagship enterprise AI orchestration platform — quota engine, RAGAS eval, shadow deployment |
+| 🤖 AI Agent Orchestration | PDF → full-stack enterprise app in 5–12 mins, 10-agent pipeline, 220+ files |
+| ⚙️ Autonomous Runtime | OS-grade agentic runtime — scheduler, memory, economic routing, observability |
+| 🛡️ Failure Playbook | Agentic system failure taxonomy, reversible autonomy, decision traceability |
+| 📊 SPOT Analytics | Six-layer agentic analytics platform with governed control plane |
+| 🔍 RAG Pipeline | Production RAG with hallucination evaluation (LLM-as-a-Judge) |
 | ✍️ Publications | 5 Medium articles on Agentic AI architecture |
 | 📄 Resume | Interactive HTML resume + downloadable templates |
 
@@ -28,6 +31,8 @@ Built with **vanilla HTML, CSS, and JavaScript** — zero frameworks, zero build
 
 ## Featured Projects (GitHub)
 
+- [`AIFactory`](https://github.com/Deepak-mk/AIFactory) — Production-hardened enterprise AI orchestration platform (8 microservices, FinOps, RAGAS)
+- [`ai-agent-orchestration`](https://github.com/Deepak-mk/ai-agent-orchestration) — 10-agent pipeline: PDF → 220+ file full-stack enterprise app
 - [`autonomous-enterprise-runtime`](https://github.com/Deepak-mk/autonomous-enterprise-runtime) — OS-grade runtime for autonomous AI agents
 - [`agentic-system-failure-playbook`](https://github.com/Deepak-mk/agentic-system-failure-playbook) — Production failure modes & recovery patterns
 - [`spot`](https://github.com/Deepak-mk/spot) — Agentic analytics platform (Six-Layer Runtime)
