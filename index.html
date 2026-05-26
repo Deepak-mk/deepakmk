@@ -1,0 +1,685 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deepak MK | VP Data Science & AI Leader</title>
+    <meta name="description" content="Portfolio of Deepak MK, Senior Data Science Leader with 12+ years of experience leading AI/ML initiatives, LLMs, RAG systems, and scalable MLOps.">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+    <!-- CSS Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Lucide Icons CDN -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+    <!-- Background Canvas for Interactive AI Particles -->
+    <canvas id="particles-canvas"></canvas>
+
+    <!-- Header Navigation -->
+    <header class="header">
+        <div class="nav-container">
+            <a href="#" class="logo">
+                <span class="logo-icon"></span>
+                DEEPAK <span class="logo-highlight">MK</span>
+            </a>
+            
+            <nav class="nav-menu" id="nav-menu">
+                <a href="#about" class="nav-link">About</a>
+                <a href="#skills" class="nav-link">Skills</a>
+                <a href="#experience" class="nav-link">Experience</a>
+                <a href="#projects" class="nav-link">Projects</a>
+                <a href="#education" class="nav-link">Education</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </nav>
+
+            <div class="nav-actions">
+                <button id="theme-toggle" class="btn-icon" aria-label="Toggle Theme">
+                    <i data-lucide="moon" class="icon-moon"></i>
+                    <i data-lucide="sun" class="icon-sun"></i>
+                </button>
+                <button class="btn btn-primary btn-print" onclick="window.print()">
+                    <i data-lucide="printer"></i>
+                    <span>Print Resume</span>
+                </button>
+                <button class="menu-toggle" id="menu-toggle" aria-label="Toggle Menu">
+                    <i data-lucide="menu" class="icon-open"></i>
+                    <i data-lucide="x" class="icon-close"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main class="main-content">
+        <!-- Hero Section -->
+        <section class="hero" id="hero">
+            <div class="hero-container">
+                <div class="hero-text-content">
+                    <div class="badge-container">
+                        <span class="badge">
+                            <span class="pulse-dot"></span>
+                            VP Data Science & AI Leader
+                        </span>
+                    </div>
+                    <h1 class="hero-title">
+                        Engineering the Future of <br>
+                        <span class="text-gradient">Intelligent Systems</span>
+                    </h1>
+                    <div class="typewriter-container">
+                        <span class="typewriter-prefix">Expert in </span>
+                        <span id="typewriter" class="typewriter-text"></span>
+                    </div>
+                    <p class="hero-description">
+                        Over 12 years of experience leading cross-functional teams in Data Engineering, AI/ML, and MLOps. Specializing in production-grade LLM implementations, advanced RAG architectures, and highly scalable cloud-native AI infrastructures serving millions of users.
+                    </p>
+                    <div class="hero-actions">
+                        <a href="#projects" class="btn btn-primary">
+                            <span>Explore Portfolio</span>
+                            <i data-lucide="arrow-right"></i>
+                        </a>
+                        <a href="#contact" class="btn btn-secondary">
+                            <span>Get in Touch</span>
+                            <i data-lucide="mail"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Interactive Hero Graphic -->
+                <div class="hero-graphic-container">
+                    <div class="neural-network-visual">
+                        <div class="core-node">
+                            <i data-lucide="cpu" class="glow-icon"></i>
+                        </div>
+                        <div class="orbit orbit-1">
+                            <div class="node node-ml"><i data-lucide="brain"></i></div>
+                            <div class="node node-rag"><i data-lucide="database"></i></div>
+                        </div>
+                        <div class="orbit orbit-2">
+                            <div class="node node-llm"><i data-lucide="message-square"></i></div>
+                            <div class="node node-ops"><i data-lucide="git-branch"></i></div>
+                            <div class="node node-cloud"><i data-lucide="cloud"></i></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Hero Stats Grid -->
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <h3 class="stat-value">12+</h3>
+                    <p class="stat-label">Years AI Experience</p>
+                </div>
+                <div class="stat-card">
+                    <h3 class="stat-value">20+</h3>
+                    <p class="stat-label">Team Members Led</p>
+                </div>
+                <div class="stat-card">
+                    <h3 class="stat-value">40%</h3>
+                    <p class="stat-label">ML Cost Optimization</p>
+                </div>
+                <div class="stat-card">
+                    <h3 class="stat-value">&lt;100ms</h3>
+                    <p class="stat-label">Inference Latency</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- About / Executive Summary -->
+        <section class="about" id="about">
+            <div class="section-header">
+                <h2 class="section-title">Executive Summary</h2>
+                <div class="section-underline"></div>
+            </div>
+            
+            <div class="about-grid">
+                <div class="about-card intro-card">
+                    <h3>Leading AI Innovation at Scale</h3>
+                    <p>
+                        I am a senior data science leader driving enterprise AI/ML initiatives across consulting, product development, and organizational management. Currently, as the VP of Data Science at ExamRoom.AI, I lead cross-functional engineering and research teams to deploy high-availability ML pipelines, automated examination ecosystems, and generative AI models.
+                    </p>
+                    <p>
+                        My background spans domains including EdTech, Oil & Gas, Investment Banking, Healthcare, and HR Analytics, enabling me to build tailored solutions that align deep technical innovation with high-impact business outcomes.
+                    </p>
+                    <div class="location-badge">
+                        <i data-lucide="map-pin"></i>
+                        <span>Bengaluru, India (Global Experience: Malaysia, UAE, USA)</span>
+                    </div>
+                </div>
+
+                <div class="about-pillars">
+                    <div class="pillar-card">
+                        <div class="pillar-icon"><i data-lucide="users"></i></div>
+                        <div class="pillar-content">
+                            <h4>VP-Level Team Leadership</h4>
+                            <p>Building high-performing teams across Data Engineering, AI/ML, and MLOps, aligning delivery with organizational strategy.</p>
+                        </div>
+                    </div>
+                    <div class="pillar-card">
+                        <div class="pillar-icon"><i data-lucide="bot"></i></div>
+                        <div class="pillar-content">
+                            <h4>Production LLM & RAG Systems</h4>
+                            <p>Designing advanced semantic search, Vector DB indexing, context window pruning, and safety guardrails for generative systems.</p>
+                        </div>
+                    </div>
+                    <div class="pillar-card">
+                        <div class="pillar-icon"><i data-lucide="server"></i></div>
+                        <div class="pillar-content">
+                            <h4>Scalable ML Infrastructure</h4>
+                            <p>Automating model training, orchestration, and real-time sub-100ms API inference using modern cloud-native MLOps pipelines.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Interactive Skills Section -->
+        <section class="skills" id="skills">
+            <div class="section-header">
+                <h2 class="section-title">Core Competencies</h2>
+                <p class="section-subtitle">Click a skill card to highlight experience and projects where it was applied.</p>
+                <div class="section-underline"></div>
+            </div>
+
+            <div class="skills-container">
+                <div class="skills-category-group">
+                    <h3 class="category-title">AI & LLM Technologies</h3>
+                    <div class="skills-grid">
+                        <button class="skill-tag" data-skill="llm"><i data-lucide="bot"></i> LLMs</button>
+                        <button class="skill-tag" data-skill="rag"><i data-lucide="database"></i> RAG Systems</button>
+                        <button class="skill-tag" data-skill="fine-tuning"><i data-lucide="sliders"></i> Fine-tuning</button>
+                        <button class="skill-tag" data-skill="prompt-eng"><i data-lucide="terminal"></i> Prompt Engineering</button>
+                        <button class="skill-tag" data-skill="nlp"><i data-lucide="message-square"></i> NLP / NLU</button>
+                    </div>
+                </div>
+
+                <div class="skills-category-group">
+                    <h3 class="category-title">Machine Learning & Analytics</h3>
+                    <div class="skills-grid">
+                        <button class="skill-tag" data-skill="ml"><i data-lucide="brain"></i> Machine Learning</button>
+                        <button class="skill-tag" data-skill="deep-learning"><i data-lucide="layers"></i> Deep Learning</button>
+                        <button class="skill-tag" data-skill="predictive"><i data-lucide="trending-up"></i> Predictive Modeling</button>
+                        <button class="skill-tag" data-skill="time-series"><i data-lucide="calendar"></i> Time Series (ARIMA)</button>
+                        <button class="skill-tag" data-skill="clustering"><i data-lucide="git-commit"></i> Clustering (Clara, K-means)</button>
+                    </div>
+                </div>
+
+                <div class="skills-category-group">
+                    <h3 class="category-title">Data & Cloud Infrastructure</h3>
+                    <div class="skills-grid">
+                        <button class="skill-tag" data-skill="python"><i data-lucide="code-2"></i> Python</button>
+                        <button class="skill-tag" data-skill="r"><i data-lucide="binary"></i> R</button>
+                        <button class="skill-tag" data-skill="sql"><i data-lucide="database"></i> SQL</button>
+                        <button class="skill-tag" data-skill="spark"><i data-lucide="zap"></i> PySpark / Spark</button>
+                        <button class="skill-tag" data-skill="aws"><i data-lucide="cloud"></i> AWS</button>
+                        <button class="skill-tag" data-skill="vector-db"><i data-lucide="git-branch"></i> Vector DBs</button>
+                    </div>
+                </div>
+
+                <div class="skills-category-group">
+                    <h3 class="category-title">MLOps & Visualization</h3>
+                    <div class="skills-grid">
+                        <button class="skill-tag" data-skill="mlops"><i data-lucide="infinity"></i> MLOps CI/CD</button>
+                        <button class="skill-tag" data-skill="docker"><i data-lucide="box"></i> Docker / K8s</button>
+                        <button class="skill-tag" data-skill="tableau"><i data-lucide="pie-chart"></i> Tableau</button>
+                        <button class="skill-tag" data-skill="power-bi"><i data-lucide="bar-chart-3"></i> Power BI</button>
+                        <button class="skill-tag" data-skill="agile"><i data-lucide="repeat"></i> Agile / Scrum</button>
+                    </div>
+                </div>
+            </div>
+
+            <div id="skills-active-notice" class="skills-notice hidden">
+                <span>Active Filter: Highlighted matching items below.</span>
+                <button id="clear-skills-filter" class="btn-text">Clear Highlight</button>
+            </div>
+        </section>
+
+        <!-- Professional Experience Section -->
+        <section class="experience" id="experience">
+            <div class="section-header">
+                <h2 class="section-title">Professional Journey</h2>
+                <div class="section-underline"></div>
+            </div>
+
+            <div class="timeline">
+                <!-- ExamRoom.AI -->
+                <div class="timeline-item" data-skills="leadership,llm,rag,mlops,aws,vector-db,fine-tuning,agile,python">
+                    <div class="timeline-marker">
+                        <i data-lucide="briefcase"></i>
+                    </div>
+                    <div class="timeline-content card glass-card">
+                        <div class="timeline-header">
+                            <span class="timeline-period">July 2021 - Present</span>
+                            <h3 class="job-title">VP Data Science</h3>
+                            <h4 class="company-name">ExamRoom.AI, Bengaluru</h4>
+                        </div>
+                        <div class="job-summary">
+                            <p>Leading comprehensive AI/ML strategy and execution, managing multi-disciplinary teams across data engineering, machine learning, and MLOps functions.</p>
+                        </div>
+                        <ul class="job-bullet-list">
+                            <li><strong>Team Leadership:</strong> Built and managed high-performing teams across Data Engineering, AI/ML, Data Science, and MLOps functions.</li>
+                            <li><strong>LLM Production Systems:</strong> Architected and deployed production-level Large Language Model solutions for educational assessment and content generation.</li>
+                            <li><strong>RAG Pipeline Development:</strong> Designed and implemented Retrieval-Augmented Generation (RAG) systems for intelligent content retrieval and question generation.</li>
+                            <li><strong>MLOps Infrastructure:</strong> Established end-to-end ML pipeline automation, model versioning, and continuous deployment frameworks.</li>
+                            <li><strong>Educational AI Solutions:</strong> Developed AI-powered examination systems, automated grading mechanisms, and personalized learning recommendations.</li>
+                            <li><strong>Scalable Architecture:</strong> Built cloud-native ML infrastructure supporting millions of users and real-time inference requirements (sub-100ms latency).</li>
+                        </ul>
+                        <div class="timeline-tech-tags">
+                            <span class="tech-chip">LLMs</span>
+                            <span class="tech-chip">RAG</span>
+                            <span class="tech-chip">MLOps</span>
+                            <span class="tech-chip">AWS</span>
+                            <span class="tech-chip">Fine-Tuning</span>
+                            <span class="tech-chip">Python</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Innodatatics -->
+                <div class="timeline-item" data-skills="ml,deep-learning,predictive,time-series,clustering,nlp,python,spark,sql,tableau">
+                    <div class="timeline-marker">
+                        <i data-lucide="briefcase"></i>
+                    </div>
+                    <div class="timeline-content card glass-card">
+                        <div class="timeline-header">
+                            <span class="timeline-period">July 2019 - June 2021</span>
+                            <h3 class="job-title">Data Scientist</h3>
+                            <h4 class="company-name">Innodatatics, Kuala Lumpur, Malaysia</h4>
+                        </div>
+                        <div class="job-summary">
+                            <p>Led key machine learning projects spanning NLP chatbots, healthcare capacity forecasting, financial segmentation, and industrial predictive maintenance.</p>
+                        </div>
+                        <ul class="job-bullet-list">
+                            <li>Developed intelligent customer support automation systems using advanced NLP and NLU models.</li>
+                            <li>Built an ICU capacity planning system for UAE hospitals by consolidating data across 26+ formats.</li>
+                            <li>Designed automated customer segmentation systems utilizing Clara clustering and PCA for targeted banking campaigns.</li>
+                            <li>Developed real-time predictive maintenance models for wind turbine fault detection using IoT sensor streams.</li>
+                        </ul>
+                        <div class="timeline-tech-tags">
+                            <span class="tech-chip">Python</span>
+                            <span class="tech-chip">Spark</span>
+                            <span class="tech-chip">ARIMA</span>
+                            <span class="tech-chip">Clustering</span>
+                            <span class="tech-chip">NLP</span>
+                            <span class="tech-chip">Tableau</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- DXC Technologies -->
+                <div class="timeline-item" data-skills="ml,predictive,nlp,r,power-bi,sql,python">
+                    <div class="timeline-marker">
+                        <i data-lucide="briefcase"></i>
+                    </div>
+                    <div class="timeline-content card glass-card">
+                        <div class="timeline-header">
+                            <span class="timeline-period">August 2015 - June 2019</span>
+                            <h3 class="job-title">Data Scientist</h3>
+                            <h4 class="company-name">DXC Technologies (EIT Services), Bangalore</h4>
+                        </div>
+                        <div class="job-summary">
+                            <p>Drove analytics projects targeting incident resolution routing, SLA breaches forecasting, and data mining for global IT Service Management clients.</p>
+                        </div>
+                        <ul class="job-bullet-list">
+                            <li>Built automated ITSM ticket classification engines using text mining, achieving 83% routing accuracy.</li>
+                            <li>Led predictive modeling initiatives resulting in a significant reduction of critical infrastructure incidents.</li>
+                            <li>Developed SLA breach warning systems using random forest and decision trees, scoring 90% prediction accuracy.</li>
+                        </ul>
+                        <div class="timeline-tech-tags">
+                            <span class="tech-chip">R</span>
+                            <span class="tech-chip">Python</span>
+                            <span class="tech-chip">Random Forest</span>
+                            <span class="tech-chip">NLP</span>
+                            <span class="tech-chip">Power BI</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- MacrosSys Technologies -->
+                <div class="timeline-item" data-skills="agile,sql">
+                    <div class="timeline-marker">
+                        <i data-lucide="briefcase"></i>
+                    </div>
+                    <div class="timeline-content card glass-card">
+                        <div class="timeline-header">
+                            <span class="timeline-period">October 2012 - July 2015</span>
+                            <h3 class="job-title">Business Analyst</h3>
+                            <h4 class="company-name">MacrosSys Technologies, Bangalore</h4>
+                        </div>
+                        <div class="job-summary">
+                            <p>Managed ITSM product governance and compliance for key enterprise customers, implementing ITIL standard support systems.</p>
+                        </div>
+                        <ul class="job-bullet-list">
+                            <li>Established ITIL-based support processes and SLA compliance monitoring structures.</li>
+                            <li>Managed User Acceptance Testing (UAT) and deployment pipelines for major patches and vendor fixes.</li>
+                            <li>Created comprehensive KPI frameworks and governance reporting systems.</li>
+                        </ul>
+                        <div class="timeline-tech-tags">
+                            <span class="tech-chip">ITSM</span>
+                            <span class="tech-chip">SLA Governance</span>
+                            <span class="tech-chip">UAT Testing</span>
+                            <span class="tech-chip">Agile</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Grid Section -->
+        <section class="projects" id="projects">
+            <div class="section-header">
+                <h2 class="section-title">Featured Projects</h2>
+                <div class="section-underline"></div>
+            </div>
+
+            <!-- Projects Filter Controls -->
+            <div class="project-filters">
+                <button class="filter-btn active" data-filter="all">All Projects</button>
+                <button class="filter-btn" data-filter="ai-nlp">AI & NLP</button>
+                <button class="filter-btn" data-filter="predictive">Predictive & IoT</button>
+                <button class="filter-btn" data-filter="analytics">Analytics & BI</button>
+            </div>
+
+            <div class="projects-grid">
+                <!-- Project 1: Chatbot -->
+                <div class="project-card glass-card" data-category="ai-nlp" data-skills="nlp,deep-learning,python,spark">
+                    <div class="project-badge">Generative AI / NLP</div>
+                    <div class="project-content">
+                        <h3 class="project-title">Smart NLP Customer Chatbot</h3>
+                        <p class="project-text">
+                            Developed an automated customer support bot leveraging deep natural language understanding (NLU) models to handle client queries dynamically.
+                        </p>
+                        <ul class="project-details">
+                            <li>Implemented RASA NLU and CNN models for intent classification and entity parsing.</li>
+                            <li>Constructed text preprocessing flows (Stemming, POS tagging, Dependency Parsing).</li>
+                            <li>Deployed on Apache Spark streams for low-latency responses.</li>
+                        </ul>
+                        <div class="project-tech">
+                            <span class="tech-chip">RASA NLU</span>
+                            <span class="tech-chip">CNN</span>
+                            <span class="tech-chip">Python</span>
+                            <span class="tech-chip">Spark</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 2: ICU Forecasting -->
+                <div class="project-card glass-card" data-category="predictive" data-skills="predictive,time-series,python,sql,tableau">
+                    <div class="project-badge">Predictive Analytics</div>
+                    <div class="project-content">
+                        <h3 class="project-title">ICU Patient Capacity Forecasting</h3>
+                        <p class="project-text">
+                            Created a predictive capacity system for UAE hospital ICU planning, handling complex seasonal healthcare data.
+                        </p>
+                        <ul class="project-details">
+                            <li>Consolidated 14 years of historical admissions data from over 26 distinct formats.</li>
+                            <li>Engineered robust ETL scripts loading into a central MySQL schema.</li>
+                            <li>Developed ARIMA models generating daily, weekly, and monthly demand predictions.</li>
+                        </ul>
+                        <div class="project-tech">
+                            <span class="tech-chip">Python</span>
+                            <span class="tech-chip">ARIMA</span>
+                            <span class="tech-chip">MySQL</span>
+                            <span class="tech-chip">Tableau</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 3: Targeted Marketing -->
+                <div class="project-card glass-card" data-category="analytics" data-skills="clustering,predictive,python,tableau">
+                    <div class="project-badge">Data Science / ML</div>
+                    <div class="project-content">
+                        <h3 class="project-title">Targeted Banking Segmentation</h3>
+                        <p class="project-text">
+                            Built an automated customer clustering system for a leading Malaysian banking institution to drive personalized marketing campaigns.
+                        </p>
+                        <ul class="project-details">
+                            <li>Applied PCA to reduce 100+ raw transactional variables down to 10 principal components (96% information retention).</li>
+                            <li>Deployed Clara and K-means clustering models to outline 15 distinct user segments.</li>
+                            <li>Automated data loading to trigger dynamic offers in real time.</li>
+                        </ul>
+                        <div class="project-tech">
+                            <span class="tech-chip">Python</span>
+                            <span class="tech-chip">PCA</span>
+                            <span class="tech-chip">Clara Clustering</span>
+                            <span class="tech-chip">Tableau</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 4: Wind Turbine IoT -->
+                <div class="project-card glass-card" data-category="predictive" data-skills="predictive,ml,python,tableau">
+                    <div class="project-badge">IoT / Predictive Maintenance</div>
+                    <div class="project-content">
+                        <h3 class="project-title">Wind Turbine Fault Prevention</h3>
+                        <p class="project-text">
+                            Engineered a predictive maintenance framework processing high-frequency IoT sensors to prevent mechanical outages.
+                        </p>
+                        <ul class="project-details">
+                            <li>Ingested live streams from 40 IoT sensors monitoring turbine mechanics.</li>
+                            <li>Applied Variance Inflation Factor (VIF) to eliminate multicollinear indicators.</li>
+                            <li>Implemented Random Forest classifiers to predict failure events with 67%+ lead time accuracy.</li>
+                        </ul>
+                        <div class="project-tech">
+                            <span class="tech-chip">Python</span>
+                            <span class="tech-chip">Random Forest</span>
+                            <span class="tech-chip">VIF</span>
+                            <span class="tech-chip">IoT Sensors</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 5: Text Classifier -->
+                <div class="project-card glass-card" data-category="ai-nlp" data-skills="nlp,ml,r">
+                    <div class="project-badge">NLP / Machine Learning</div>
+                    <div class="project-content">
+                        <h3 class="project-title">Global IT ticket Routing Engine</h3>
+                        <p class="project-text">
+                            Automated incident and service request triage for a massive global IT support footprint (300+ client orgs).
+                        </p>
+                        <ul class="project-details">
+                            <li>Implemented Naïve Bayes document classifiers using text mining (TF-IDF, Tokenization).</li>
+                            <li>Achieved 83% accurate classification to cut routing bottlenecks.</li>
+                            <li>Optimized Laplace smoothing constants to handle novel incoming vocabularies.</li>
+                        </ul>
+                        <div class="project-tech">
+                            <span class="tech-chip">R</span>
+                            <span class="tech-chip">Naïve Bayes</span>
+                            <span class="tech-chip">Laplace Estimation</span>
+                            <span class="tech-chip">TF-IDF</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 6: SLA Breach RCA -->
+                <div class="project-card glass-card" data-category="predictive" data-skills="predictive,ml,python,sql">
+                    <div class="project-badge">System Analytics</div>
+                    <div class="project-content">
+                        <h3 class="project-title">Storage Server SLA Breach Predictor</h3>
+                        <p class="project-text">
+                            Created a diagnostic model to identify root causes of backup storage server delivery lags.
+                        </p>
+                        <ul class="project-details">
+                            <li>Parsed complex configuration variables of master/client nodes, IPs, and workloads.</li>
+                            <li>Trained decision trees and ensemble classifiers to hit 90% SLA breach forecasting.</li>
+                            <li>Structured automatic breach alerts cataloged into five actionable categories.</li>
+                        </ul>
+                        <div class="project-tech">
+                            <span class="tech-chip">Python</span>
+                            <span class="tech-chip">Decision Tree</span>
+                            <span class="tech-chip">SQL</span>
+                            <span class="tech-chip">Ensemble ML</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Certifications & Education -->
+        <section class="education-certifications" id="education">
+            <div class="dual-column-grid">
+                <!-- Education -->
+                <div class="education-column">
+                    <div class="section-header align-left">
+                        <h2 class="section-title">Education</h2>
+                        <div class="section-underline"></div>
+                    </div>
+                    <div class="card glass-card education-card">
+                        <div class="card-icon"><i data-lucide="graduation-cap"></i></div>
+                        <div class="card-details">
+                            <span class="edu-year">2007 - 2011</span>
+                            <h3>Bachelor of Engineering (Computer Science)</h3>
+                            <p class="edu-school">Government Engineering College, VTU</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Certifications -->
+                <div class="certifications-column">
+                    <div class="section-header align-left">
+                        <h2 class="section-title">Certifications</h2>
+                        <div class="section-underline"></div>
+                    </div>
+                    <div class="certs-grid">
+                        <div class="cert-item glass-card">
+                            <i data-lucide="award"></i>
+                            <div>
+                                <h4>AWS Cloud Foundation</h4>
+                                <p>Amazon Web Services</p>
+                            </div>
+                        </div>
+                        <div class="cert-item glass-card">
+                            <i data-lucide="award"></i>
+                            <div>
+                                <h4>Scrum Master Foundation</h4>
+                                <p>Scrum Alliance / Scrum Study</p>
+                            </div>
+                        </div>
+                        <div class="cert-item glass-card">
+                            <i data-lucide="award"></i>
+                            <div>
+                                <h4>CITI Program Certificate</h4>
+                                <p>MIT (Healthcare Projects)</p>
+                            </div>
+                        </div>
+                        <div class="cert-item glass-card">
+                            <i data-lucide="award"></i>
+                            <div>
+                                <h4>Lean Six Sigma Black & Green Belt</h4>
+                                <p>Process & Quality Optimization</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section class="contact" id="contact">
+            <div class="section-header">
+                <h2 class="section-title">Get In Touch</h2>
+                <div class="section-underline"></div>
+            </div>
+
+            <div class="contact-grid">
+                <div class="contact-info-card glass-card">
+                    <h3>Let's Collaborate</h3>
+                    <p>I am open to leadership consultations, advisory roles on LLM/RAG systems, speaking engagements, and key technical alignments.</p>
+                    
+                    <div class="contact-links-list">
+                        <a href="mailto:deepak09b@gmail.com" class="contact-link-item">
+                            <div class="link-icon"><i data-lucide="mail"></i></div>
+                            <div>
+                                <span class="link-label">Email</span>
+                                <span class="link-value">deepak09b@gmail.com</span>
+                            </div>
+                        </a>
+                        <a href="tel:+919538404430" class="contact-link-item">
+                            <div class="link-icon"><i data-lucide="phone"></i></div>
+                            <div>
+                                <span class="link-label">Phone (India)</span>
+                                <span class="link-value">+91 95384 04430</span>
+                            </div>
+                        </a>
+                        <a href="tel:+60199379024" class="contact-link-item">
+                            <div class="link-icon"><i data-lucide="phone"></i></div>
+                            <div>
+                                <span class="link-label">Phone (Malaysia)</span>
+                                <span class="link-value">+60 19-937 9024</span>
+                            </div>
+                        </a>
+                        <a href="https://linkedin.com" target="_blank" rel="noopener" class="contact-link-item">
+                            <div class="link-icon"><i data-lucide="linkedin"></i></div>
+                            <div>
+                                <span class="link-label">LinkedIn</span>
+                                <span class="link-value">Deepak MK on LinkedIn</span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Contact Form -->
+                <div class="contact-form-container glass-card">
+                    <form id="contact-form" novalidate>
+                        <div class="form-group">
+                            <label for="form-name">Name</label>
+                            <input type="text" id="form-name" placeholder="John Doe" required>
+                            <span class="error-msg">Please enter your name</span>
+                        </div>
+                        <div class="form-group">
+                            <label for="form-email">Email Address</label>
+                            <input type="email" id="form-email" placeholder="john@example.com" required>
+                            <span class="error-msg">Please enter a valid email address</span>
+                        </div>
+                        <div class="form-group">
+                            <label for="form-subject">Subject</label>
+                            <input type="text" id="form-subject" placeholder="Project Inquiry" required>
+                            <span class="error-msg">Please enter a subject</span>
+                        </div>
+                        <div class="form-group">
+                            <label for="form-message">Message</label>
+                            <textarea id="form-message" rows="5" placeholder="Let's build something awesome..." required></textarea>
+                            <span class="error-msg">Please enter your message</span>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-submit">
+                            <span>Send Message</span>
+                            <i data-lucide="send"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <p>&copy; 2026 Deepak MK. All rights reserved. Created for direct GitHub Pages deployment.</p>
+            <div class="footer-links">
+                <a href="#about">About</a>
+                <a href="#experience">Experience</a>
+                <a href="#projects">Projects</a>
+                <a href="mailto:deepak09b@gmail.com">Contact</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Form Success Modal -->
+    <div id="success-modal" class="modal hidden">
+        <div class="modal-content glass-card">
+            <div class="modal-icon"><i data-lucide="check-circle-2"></i></div>
+            <h3>Message Sent!</h3>
+            <p>Thank you for reaching out, Deepak will respond to your message shortly.</p>
+            <button id="close-modal-btn" class="btn btn-primary">Close</button>
+        </div>
+    </div>
+
+    <!-- JS Scripts -->
+    <script src="script.js"></script>
+    <script>
+        // Initialize Lucide Icons
+        lucide.createIcons();
+    </script>
+</body>
+</html>
