@@ -69,11 +69,11 @@ navLinks.forEach(link => {
    ========================================== */
 const typewriterEl = document.getElementById('typewriter');
 const phrases = [
-    "VP-Level Data Science Strategy",
-    "Production LLM Deployment",
-    "Enterprise RAG Architectures",
-    "Scalable Cloud MLOps (AWS)",
-    "Sub-100ms Inference Systems"
+    "Agentic AI Architecture",
+    "GenAI & LLM Systems",
+    "Enterprise RAG Pipelines",
+    "Cloud-Native MLOps (AWS)",
+    "Multi-Agent Orchestration"
 ];
 let phraseIdx = 0;
 let charIdx = 0;
